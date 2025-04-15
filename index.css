@@ -456,12 +456,13 @@
       }
 
       .picture img {
-        transition: 0.3s ease-in-out;
+        transition: filter 0.2s ease-in-out;
       }
 
       .picture:hover img {
         cursor: pointer;
-        opacity: 0.4;
+        filter: blur(10px);
+        opacity: 0.5;
       }
 
       .picture::before {
@@ -634,7 +635,7 @@
     font-size: 35px;
     color: var(--white);
     text-transform: uppercase;
-    width: 60%;
+    width: 80%;
     z-index: 2;
   }
 
